@@ -9,10 +9,9 @@ const items = [
 ]
 
 export default () => (
-    <main className="grid gap-10 text-dark-slate-grey pb-10">
-        <section className="bg-illustration bg-no-repeat bg-cover h-72 rounded-b-2xl">
-        </section>
-        <section className="px-6 grid gap-10">
+    <section className="grid gap-10 text-dark-slate-grey pb-10">
+        <div className="bg-illustration bg-no-repeat bg-cover h-72 rounded-b-2xl" />
+        <div className="px-6 grid gap-10">
             <div className="grid gap-6">
                 <h1 className="text-heading ">Stay updated!</h1>
                 <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -33,6 +32,6 @@ export default () => (
                 />
             </div>
             <Form />
-        </section>
-    </main>
+        </div>
+    </section>
 )
