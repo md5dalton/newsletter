@@ -2,8 +2,8 @@ import Image from "next/image"
 import Link from "next/link"
 
 export default () => (
-    <div className="grid min-h-screen content-between px-6 pb-10">
-        <section className="mt-36 space-y-10">
+    <section className="grid min-h-screen content-between px-6 pb-10">
+        <div className="mt-36 space-y-10">
             <Image
                 alt=""
                 src="/icon-success.svg"
@@ -18,7 +18,7 @@ export default () => (
                     Please open it and click the button inside to confirm your subscription
                 </p>
             </div>  
-        </section>
+        </div>
         <Link href="/" className="btn">Dismiss message</Link>
-    </div>
+    </section>
 )
