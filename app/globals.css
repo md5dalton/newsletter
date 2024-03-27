@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --bg-illustration: url('/illustration-sign-up-mobile.svg')
+}
+
+@media (min-width: 768px) {
+    :root {
+        --bg-illustration: url('/illustration-sign-up-desktop.svg')
+    }
+}
