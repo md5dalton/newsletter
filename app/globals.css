@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 :root {
-    --bg-illustration: url('/illustration-sign-up-mobile.svg')
+    --fs-heading: 40px;
+    
+    --bg-illustration: url('/illustration-sign-up-mobile.svg');
 }
 
 @media (min-width: 768px) {
     :root {
-        --bg-illustration: url('/illustration-sign-up-desktop.svg')
+        --fs-heading: 56px;
+
+        --bg-illustration: url('/illustration-sign-up-desktop.svg');
     }
 }
