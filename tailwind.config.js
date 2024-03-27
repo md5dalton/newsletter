@@ -15,6 +15,11 @@ module.exports = {
       },
       backgroundImage: {
         "illustration": "var(--bg-illustration)"
+      },
+      fontSize: {
+        "heading": ["var(--fs-heading)", {
+          fontWeight: 700
+        }] 
       }
     },
   },
