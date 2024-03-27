@@ -18,7 +18,8 @@ module.exports = {
       },
       fontSize: {
         "heading": ["var(--fs-heading)", {
-          fontWeight: 700
+          fontWeight: 700,
+          lineHeight: "normal"
         }] 
       }
     },

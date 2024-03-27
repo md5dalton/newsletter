@@ -26,11 +26,11 @@ export default () => (
             <fieldset className="grid gap-2">
                 <label className="flex justify-between text-xs font-bold">
                     <p>Email address</p>
-                    <p className="text-tomato">Valid email required</p>
-                    {/* <ErrorMessage
+                    <ErrorMessage
+                        className="text-tomato"
                         name="email"
                         component="p"
-                    /> */}
+                    />
                 </label>
                 <Field
                     className="
@@ -45,7 +45,7 @@ export default () => (
             </fieldset>
             <button
                 type="submit"
-                className="bg-dark-slate-grey text-white grid h-14 place-items-center rounded-lg font-bold"
+                className="btn"
             >Subscribe to monthly newsletter</button>
         </Form>
     </Formik>

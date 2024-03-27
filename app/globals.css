@@ -15,3 +15,9 @@
         --bg-illustration: url('/illustration-sign-up-desktop.svg');
     }
 }
+
+@layer components {
+    .btn {
+        @apply bg-dark-slate-grey text-white grid h-14 place-items-center rounded-lg font-bold
+    }
+}
