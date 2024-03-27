@@ -22,23 +22,31 @@ export default () => (
             }, 400)
         }}
     >
-        <Form>
-            <fieldset>
-                <label>
-                    <p>Email</p>
-                    <p>Valid email required</p>
+        <Form className="grid gap-6">
+            <fieldset className="grid gap-2">
+                <label className="flex justify-between text-xs font-bold">
+                    <p>Email address</p>
+                    <p className="text-tomato">Valid email required</p>
                     {/* <ErrorMessage
                         name="email"
                         component="p"
                     /> */}
                 </label>
                 <Field
+                    className="
+                        px-6 py-4
+                        rounded-lg outline-none
+                        border-2 border-grey
+                    "
                     type="email"
                     name="email"
                     placeholder="name@company.com"
                 />
             </fieldset>
-            <button type="submit">Subscribe to monthly newsletter</button>
+            <button
+                type="submit"
+                className="bg-dark-slate-grey text-white grid h-14 place-items-center rounded-lg font-bold"
+            >Subscribe to monthly newsletter</button>
         </Form>
     </Formik>
 )
