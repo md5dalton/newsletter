@@ -13,9 +13,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en">
+        <html lang="en" className="md:bg-charcoal-grey grid place-items-center min-h-screen md:px-6">
             <body className={font.className}>
-                <main>
+                <main className="bg-white md:p-6 md:rounded-[36px] md:shadow-card">
                     {children}
                 </main>
             </body>
