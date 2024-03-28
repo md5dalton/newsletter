@@ -10,14 +10,22 @@
 
 @media (min-width: 768px) {
     :root {
-        --fs-heading: 56px;
-
         --bg-illustration: url('/illustration-sign-up-desktop.svg');
+    }
+}
+@media (min-width: 1024px) {
+    :root {
+        --fs-heading: 56px;
     }
 }
 
 @layer components {
     .btn {
-        @apply bg-dark-slate-grey text-white grid h-14 place-items-center rounded-lg font-bold
+        @apply 
+            text-white grid h-14 place-items-center rounded-lg font-bold
+            bg-gradient-to-b hover:shadow-card 
+            bg-dark-slate-grey 
+            hover:from-tomato hover:to-pink
+            transition-all
     }
 }
