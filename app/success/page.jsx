@@ -2,8 +2,13 @@ import Image from "next/image"
 import Link from "next/link"
 
 export default () => (
-    <section className="grid min-h-screen content-between px-6 pb-10">
-        <div className="mt-36 space-y-10">
+    <section
+        className="
+            grid content-between
+            px-6 pb-10 min-h-screen
+            md:min-h-0 md:p-16 md:max-w-[500px] md:gap-10
+        ">
+        <div className="mt-36 space-y-10 md:mt-0">
             <Image
                 alt=""
                 src="/icon-success.svg"
