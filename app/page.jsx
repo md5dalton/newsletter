@@ -9,8 +9,16 @@ const items = [
 ]
 
 export default () => (
-    <section className="grid gap-10 text-dark-slate-grey pb-10">
-        <div className="bg-illustration bg-no-repeat bg-cover h-72 rounded-b-2xl" />
+    <section
+        className="
+            grid gap-10 text-dark-slate-grey pb-10
+            md:grid-cols-main md:gap-16 md:pl-10 md:pb-0
+        "
+    >
+        <div className="
+            bg-illustration bg-no-repeat bg-cover h-72 rounded-b-2xl
+            md:order-1 md:h-full
+        " />
         <div className="px-6 grid gap-10">
             <div className="grid gap-6">
                 <h1 className="text-heading ">Stay updated!</h1>
